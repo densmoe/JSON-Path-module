@@ -6,14 +6,14 @@ A JSONPath implementation based on the Jayway JsonPath java library (https://git
 
 ## Typical usage scenario
 
-When JSON structures are nested it is not always convenient to use import mappings, because each level of nesting requires the creation of unnecessary entities and associations in domain model. This module contains java actions for retrieving single values from a json structure as well as nested json objects and arrays that can be used in a import mapping.
+When JSON structures are nested it is not always convenient to use import mappings, because each level of nesting means that unnecessary entities and associations need to be added to the domain model. This module contains java actions for retrieving single values from a json structure as well as nested json objects and arrays that can be used in a import mappings.
 
-Retrieving / Finding simple values from a (nested) JSON sturcture.
-Strings, Integers, Decimals, Booleans
-Retrieving JSON structures in a nested JSON structure
-JSON Objects & Arrays (returned as Strings)
-Using the JSONPath Syntax for filter results (e.g. filtering json before applying an import mapping)
-Features and limitations
+* Retrieving / Finding simple values from a (nested) JSON structure.
+  * Strings, Integers, Decimals, Booleans
+* Retrieving JSON structures in a nested JSON structure
+  * JSON Objects & Arrays (returned as Strings)
+* Using the JSONPath Syntax for filter results (e.g. filtering json before applying an import mapping)
+  * Features and limitations
 
 ## Available Microflow actions:
 
