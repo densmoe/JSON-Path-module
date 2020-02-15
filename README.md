@@ -12,26 +12,26 @@ When JSON structures are nested it is not always convenient to use import mappin
   * Strings, Integers, Decimals, Booleans
 * Retrieving JSON structures in a nested JSON structure
   * JSON Objects & Arrays (returned as Strings)
-* Using the JSONPath Syntax for filter results (e.g. filtering json before applying an import mapping)
+* Using the JSONPath Syntax for filter results (e.g. filtering json before applying a import mapping)
   * Features and limitations
 
 ## Available Microflow actions:
 
 GetStringFromJSONByPath
 * Returns first String value from a JSON input matching JSONPath expression
-* Returns empty if not found or result is not a String
+* Returns empty if not found or result is not String
 
 GetBooleanFromJSONByPath
 * Returns first Boolean* value from a JSON input matching JSONPath expression
-* Returns empty if not found or result is not a Boolean
+* Returns empty if not found or result is not Boolean
 
 GetIntegerFromJSONByPath
 * Returns first Integer value from a JSON input matching JSONPath expression
-* Returns empty if not found or result is not a Integer
+* Returns empty if not found or result is not Integer/Long
 
 GetDecimalFromJSONByPath
 * Returns first Decimal value from a JSON input matching JSONPath expression
-* Returns empty if not found or result is not numeric (Integer, Decimal,..)
+* Returns empty if not found or result is not numeric (Integer, Decimal, etc.)
 
 GetJSONObjectFromJSONByPath
 * Returns JSON Object String from a JSON input matching JSONPath expression
