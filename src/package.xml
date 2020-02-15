@@ -21,10 +21,10 @@
       <file path="userlib\stax-api-1.0.1.jar.JSONPath.RequiredLib" />
       <file path="javasource\jsonpath\actions\GetDecimalFromJSONByPath.java" />
       <file path="javasource\jsonpath\actions\GetJSONObjectFromJSONByPath.java" />
-      <file path="javasource\jsonpath\actions\GetIntegerFromJSONByPath.java" />
       <file path="javasource\jsonpath\actions\GetBooleanFromJSONByPath.java" />
       <file path="javasource\jsonpath\actions\GetJSONArrayFromJSONByPath.java" />
       <file path="javasource\jsonpath\actions\GetStringFromJSONByPath.java" />
+      <file path="javasource\jsonpath\actions\GetIntegerFromJSONByPath.java" />
     </files>
   </modelerProject>
 </package>

@@ -12,6 +12,11 @@ package jsonpath.actions;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
 
+/**
+ * GetIntegerFromJSONByPath
+ * * Returns first Integer value from a JSON input matching JSONPath expression
+ * * Returns empty if not found or result is not Integer/Long
+ */
 public class GetIntegerFromJSONByPath extends CustomJavaAction<java.lang.Long>
 {
 	private java.lang.String json;
@@ -24,19 +29,22 @@ public class GetIntegerFromJSONByPath extends CustomJavaAction<java.lang.Long>
 		this.path = path;
 	}
 
-	@Override
+	@java.lang.Override
 	public java.lang.Long executeAction() throws Exception
 	{
 		// BEGIN USER CODE
-		Integer integerValue = JSONUtils.getValueFromJSONStringByPath(json, path, Integer.class);
-		return  (integerValue != null) ? integerValue.longValue() : null;
+		Number numberValue = JSONUtils.getValueFromJSONStringByPath(json, path, Number.class);
+		if (Integer.class.isInstance(numberValue) || Long.class.isInstance(numberValue)) {
+			return numberValue.longValue();
+		}
+		return null;
 		// END USER CODE
 	}
 
 	/**
 	 * Returns a string representation of this action
 	 */
-	@Override
+	@java.lang.Override
 	public java.lang.String toString()
 	{
 		return "GetIntegerFromJSONByPath";

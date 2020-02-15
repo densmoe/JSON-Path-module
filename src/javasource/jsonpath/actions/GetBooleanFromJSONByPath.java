@@ -13,6 +13,13 @@ import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
 import jsonpath.proxies.BooleanValue;
 
+/**
+ * GetBooleanFromJSONByPath
+ * * Returns first Boolean* value from a JSON input matching JSONPath expression
+ * * Returns empty if not found or result is not Boolean
+ * 
+ * *Does not actually return a Boolean, but an enumeration with _true & _ false values as Mendix does not support empty booleans
+ */
 public class GetBooleanFromJSONByPath extends CustomJavaAction<java.lang.String>
 {
 	private java.lang.String json;
@@ -25,7 +32,7 @@ public class GetBooleanFromJSONByPath extends CustomJavaAction<java.lang.String>
 		this.path = path;
 	}
 
-	@Override
+	@java.lang.Override
 	public java.lang.String executeAction() throws Exception
 	{
 		// BEGIN USER CODE
@@ -39,7 +46,7 @@ public class GetBooleanFromJSONByPath extends CustomJavaAction<java.lang.String>
 	/**
 	 * Returns a string representation of this action
 	 */
-	@Override
+	@java.lang.Override
 	public java.lang.String toString()
 	{
 		return "GetBooleanFromJSONByPath";
