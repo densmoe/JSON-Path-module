@@ -12,6 +12,11 @@ package jsonpath.actions;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
 
+/**
+ * GetDecimalFromJSONByPath
+ * * Returns first Decimal value from a JSON input matching JSONPath expression
+ * * Returns empty if not found or result is not numeric (Integer, Decimal, etc.)
+ */
 public class GetDecimalFromJSONByPath extends CustomJavaAction<java.math.BigDecimal>
 {
 	private java.lang.String json;
@@ -24,7 +29,7 @@ public class GetDecimalFromJSONByPath extends CustomJavaAction<java.math.BigDeci
 		this.path = path;
 	}
 
-	@Override
+	@java.lang.Override
 	public java.math.BigDecimal executeAction() throws Exception
 	{
 		// BEGIN USER CODE
@@ -36,7 +41,7 @@ public class GetDecimalFromJSONByPath extends CustomJavaAction<java.math.BigDeci
 	/**
 	 * Returns a string representation of this action
 	 */
-	@Override
+	@java.lang.Override
 	public java.lang.String toString()
 	{
 		return "GetDecimalFromJSONByPath";

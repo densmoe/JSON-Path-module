@@ -12,6 +12,11 @@ package jsonpath.actions;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
 
+/**
+ * GetStringFromJSONByPath
+ * * Returns first String value from a JSON input matching JSONPath expression
+ * * Returns empty if not found or result is not String
+ */
 public class GetStringFromJSONByPath extends CustomJavaAction<java.lang.String>
 {
 	private java.lang.String json;
@@ -24,7 +29,7 @@ public class GetStringFromJSONByPath extends CustomJavaAction<java.lang.String>
 		this.path = path;
 	}
 
-	@Override
+	@java.lang.Override
 	public java.lang.String executeAction() throws Exception
 	{
 		// BEGIN USER CODE
@@ -35,7 +40,7 @@ public class GetStringFromJSONByPath extends CustomJavaAction<java.lang.String>
 	/**
 	 * Returns a string representation of this action
 	 */
-	@Override
+	@java.lang.Override
 	public java.lang.String toString()
 	{
 		return "GetStringFromJSONByPath";

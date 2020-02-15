@@ -13,6 +13,11 @@ import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
 import net.minidev.json.JSONArray;
 
+/**
+ * GetJSONArrayFromJSONByPath
+ * * Returns JSON Array String from a JSON input matching JSONPath expression
+ * * Returns empty if not found or result is not a JSON Array
+ */
 public class GetJSONArrayFromJSONByPath extends CustomJavaAction<java.lang.String>
 {
 	private java.lang.String json;
@@ -25,7 +30,7 @@ public class GetJSONArrayFromJSONByPath extends CustomJavaAction<java.lang.Strin
 		this.path = path;
 	}
 
-	@Override
+	@java.lang.Override
 	public java.lang.String executeAction() throws Exception
 	{
 		// BEGIN USER CODE
@@ -38,7 +43,7 @@ public class GetJSONArrayFromJSONByPath extends CustomJavaAction<java.lang.Strin
 	/**
 	 * Returns a string representation of this action
 	 */
-	@Override
+	@java.lang.Override
 	public java.lang.String toString()
 	{
 		return "GetJSONArrayFromJSONByPath";
