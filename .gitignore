@@ -1,1 +1,4 @@
 .DS_Store
+*.mpr.bak
+*.mpr.lock
+./deployment
