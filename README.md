@@ -56,6 +56,10 @@ When upgrading to a higher version, delete any outdated .jar and .JSONPath.Requi
 
 Note: Starting with version 2.0.0 .JSONPath.RequiredLib files will include the version number of the module, for example: `json-smart-2.4.7.jar.JSONPath-2.0.0.RequiredLib`
 
+## Developer Notes
+
+Before publishing a new version of the module, increase the version numbers in the Mendix module, `install-dependencies.sh` and `pom.xml` and run `install-dependencies.sh` to update the userlib folder.
+
 ## Frequently Asked Questions
 
 Q: What is JSONPath?
