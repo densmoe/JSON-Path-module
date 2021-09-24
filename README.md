@@ -52,7 +52,7 @@ https://github.com/json-path/JsonPath
 
 ## Upgrading to a higher version
 
-When upgrading to a higher version, delete the .jar and .JSONPath.RequiredLib in your project's userlib folder linked to any older versions of the module. 
+When upgrading to a higher version, delete any outdated .jar and .JSONPath.RequiredLib in your project's userlib folder linked to older versions of the module. 
 
 Note: Starting with version 2.0.0 .JSONPath.RequiredLib files will include the version number of the module, for example: `json-smart-2.4.7.jar.JSONPath-2.0.0.RequiredLib`
 
