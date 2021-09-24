@@ -57,6 +57,12 @@ public class Microflows
 		IMendixObject result = (IMendixObject)Core.microflowCall("MyFirstModule.DS_JSONPathEvaluator").withParams(params).execute(context);
 		return result == null ? null : myfirstmodule.proxies.JSONPathEvaluator.initialize(context, result);
 	}
+	public static void oN_ChangeJSON(IContext context, myfirstmodule.proxies.JSONPathEvaluator _jSONPathEvaluator)
+	{
+		Map<java.lang.String, Object> params = new HashMap<>();
+		params.put("JSONPathEvaluator", _jSONPathEvaluator == null ? null : _jSONPathEvaluator.getMendixObject());
+		Core.microflowCall("MyFirstModule.ON_ChangeJSON").withParams(params).execute(context);
+	}
 	public static void testBoolean(IContext context)
 	{
 		Map<java.lang.String, Object> params = new HashMap<>();
