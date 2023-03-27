@@ -1,6 +1,6 @@
 #!/bin/sh
 
-MODULE_VERSION=2.0.0
+MODULE_VERSION=2.0.1
 
 rm -rf ./userlib/*
 rm -rf ./deployment
