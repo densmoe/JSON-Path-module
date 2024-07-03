@@ -1,0 +1,9 @@
+[rtlauncher:container$] INFO Container start took 1617. Ready to accept admin requests.
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+[containersupport:eventing] WARNING: Could not send event because no event handler was found for topic `com/mendix/events/databroker/stop`.
+
+
+
+
