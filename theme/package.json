@@ -20,7 +20,7 @@
     "homepage": "https://github.com/mendix/Atlas-UI-Framework#readme",
     "devDependencies": {
         "@types/react-native": "^0.73.0",
-        "react-native-device-info": "^5.5.3"
+        "react-native-device-info": "^14.0.0"
     },
     "dependencies": {}
 }
