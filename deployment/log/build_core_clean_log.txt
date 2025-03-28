@@ -1,9 +1,0 @@
-Buildfile: C:\Users\Dennis\Developer\JSON-Path-module\deployment\build_core.xml
-
-clean:
-   [delete] Deleting directory C:\Users\Dennis\Developer\JSON-Path-module\deployment\model
-
-BUILD SUCCESSFUL
-Total time: 0 seconds
-
-

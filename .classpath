@@ -2,7 +2,16 @@
 <classpath>
 	<classpathentry kind="src" path="javasource"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Program Files/Mendix/8.18.30.39585/runtime/bundles/com.mendix.json.jar"/><classpathentry kind="lib" path="C:/Program Files/Mendix/8.18.30.39585/runtime/bundles/com.mendix.logging-api.jar"/><classpathentry kind="lib" path="C:/Program Files/Mendix/8.18.30.39585/runtime/bundles/com.mendix.m2ee-api.jar"/><classpathentry kind="lib" path="C:/Program Files/Mendix/8.18.30.39585/runtime/bundles/com.mendix.public-api.jar"/><classpathentry kind="lib" path="C:/Program Files/Mendix/8.18.30.39585/runtime/bundles/javax.servlet-api.servlet.jar"/><classpathentry kind="lib" path="C:/Program Files/Mendix/8.18.30.39585/runtime/bundles/javax.websocket-api.websocket.jar"/>
-	<classpathentry kind="lib" path="userlib/accessors-smart-2.5.1.jar"/><classpathentry kind="lib" path="userlib/asm-9.6.jar"/><classpathentry kind="lib" path="userlib/json-path-2.9.0.jar"/><classpathentry kind="lib" path="userlib/json-smart-2.5.1.jar"/><classpathentry kind="lib" path="userlib/slf4j-api-2.0.11.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Mendix/9.24.30.51827/runtime/bundles/com.mendix.json.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Mendix/9.24.30.51827/runtime/bundles/com.mendix.logging-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Mendix/9.24.30.51827/runtime/bundles/com.mendix.m2ee-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Mendix/9.24.30.51827/runtime/bundles/com.mendix.public-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Mendix/9.24.30.51827/runtime/bundles/org.eclipse.jetty.toolchain.jetty-servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Mendix/9.24.30.51827/runtime/bundles/org.eclipse.jetty.toolchain.jetty-javax-websocket-api.jar"/>
+	<classpathentry kind="lib" path="userlib/accessors-smart-2.5.2.jar"/>
+	<classpathentry kind="lib" path="userlib/asm-9.7.1.jar"/>
+	<classpathentry kind="lib" path="userlib/json-path-2.9.0.jar"/>
+	<classpathentry kind="lib" path="userlib/json-smart-2.5.2.jar"/>
+	<classpathentry kind="lib" path="userlib/slf4j-api-2.0.11.jar"/>
 	<classpathentry kind="output" path="deployment/run/bin"/>
 </classpath>
