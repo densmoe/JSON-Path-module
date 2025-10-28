@@ -1,0 +1,364 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.4",
+  "version" : 1,
+  "metadata" : {
+    "tools" : [
+      {
+        "vendor" : "CycloneDX",
+        "name" : "cyclonedx-gradle-plugin",
+        "version" : "1.10.0"
+      }
+    ],
+    "component" : {
+      "type" : "application",
+      "bom-ref" : "pkg:maven/com.mendix/temp@1.0.0?type=jar",
+      "group" : "com.mendix",
+      "name" : "temp",
+      "version" : "1.0.0",
+      "purl" : "pkg:maven/com.mendix/temp@1.0.0?type=jar"
+    }
+  },
+  "components" : [
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/net.minidev/accessors-smart@2.6.0?type=jar",
+      "publisher" : "Chemouni Uriel",
+      "group" : "net.minidev",
+      "name" : "accessors-smart",
+      "version" : "2.6.0",
+      "description" : "Java reflect give poor performance on getter setter an constructor calls, accessors-smart use ASM to speed up those calls.",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "0ad72639eea293193f68898da9b0b902"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "2d96f1d9b6ab7f13261aa81b15703574185747a0"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "222c9f547bb20a99fc486403a398352d1306fb671b38abd7ecab6401df170e61"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "220eb28c94fdd15e7ac9b7e80d238a9871fc78db3127db9ca6207251e0e5563c62cfd5ab7625d69eb9e2563fc726e71a25562a4081f089f564dc206e0569665f"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "c861d37b7a3a5d3d42a699239e3437cf094a8359b2371bacce5f7a17da02f9a0eb65ca2456d0168c4870be36bddc135f"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "4fa8ea0794e22ccc34ecc9b73cb9cad062cd82561227b15f1261541180d584ba745611ff31e98653e4f5d481846de361"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "1b170bf2e79abd9a77bb330c51b73d695c17e5db41817efab22294f4ee65a2c1"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "224c001707e5b478f6503b88ab8c07b94f82bfb02bc81094a3ffdcf05d29f1377a8e518b223f9282d0147f386f13faf319692002d59f4c6f452b282aa6b000c0"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/net.minidev/accessors-smart@2.6.0?type=jar",
+      "modified" : false,
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://urielch.github.io/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/netplex/json-smart-v2"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.jayway.jsonpath/json-path@2.9.0?type=jar",
+      "group" : "com.jayway.jsonpath",
+      "name" : "json-path",
+      "version" : "2.9.0",
+      "description" : "A library to query and verify JSON",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "e89678d2e4ff45e4f39a97ccd0223719"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "37fe2217f577b0b68b18e62c4d17a8858ecf9b69"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "11a9ee6f88bb31f1450108d1cf6441377dec84aca075eb6bb2343be157575bea"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "9a9dbb2cd36662c8049419ed891290602baeca2549eb7df62122cb20c91e66bc8c2c0e5e13199c4a70bf0b6e62ea4c2601f84e4c79d2af25ff1704481c86740a"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "e9a54630e2111078c8c77807d9f4433e2f459fb6c41c4afa8c2a3152b62c240ea9be1614022a6a99d5aea8c61865ecfb"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "64286f27125cd6fcc3a16c0b4be106686aef7744ae103bd2160ccca622547653b9fb44e10bc6d510d16b875c95806a10"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "96e06e77b263cd1a3adb8d9c6fa666d11eebab616c4a7fb2ef7f370039a0a4ea"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "10bda57556f6ef77669f9c99fda226ff5060d3c1511e561d9e7a49fc2a534b90bc4101ab0e4ef0b420fe43f71083bba1b64ba606348e87459a6183f1d3f7e3df"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.jayway.jsonpath/json-path@2.9.0?type=jar",
+      "modified" : false,
+      "externalReferences" : [
+        {
+          "type" : "vcs",
+          "url" : "scm:git:git://github.com/jayway/JsonPath.git"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.ow2.asm/asm@9.7.1?type=jar",
+      "publisher" : "OW2",
+      "group" : "org.ow2.asm",
+      "name" : "asm",
+      "version" : "9.7.1",
+      "description" : "ASM, a very small and fast Java bytecode manipulation framework",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "e2cdd32d198ad31427d298eee9d39d8d"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "f0ed132a49244b042cd0e15702ab9f2ce3cc8436"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "8cadd43ac5eb6d09de05faecca38b917a040bb9139c7edeb4cc81c740b713281"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "4767b01603dad5c79cc1e2b5f3722f72b1059d928f184f446ba11badeb1b381b3a3a9a801cc43d25d396df950b09d19597c73173c411b1da890de808b94f1f50"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "166e2be10a19ca6a6d7cadb542eb1c948562483f02557b467a50a3d19d01318e12e5c3b495c482f3f5369be1b7f20eed"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "e301862376e84df61c3547dbf637252750224fb5b74feb82f20e1527a8e3152c45f620192a9111a2db5e2f0e73ebd7ca"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "7edcc4ff09b3ace15091a8c550f552a324b5cee6c1527944db5823df7eba8d64"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "9d220edc5528e4d788605721490f3d29483dd4bd506765e85d781048419aa89b686a70e316b82ef2a856ead56bb7be6b5d52d77b7ca6f27d5e0e347e9669d731"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "BSD-3-Clause",
+            "url" : "https://opensource.org/licenses/BSD-3-Clause"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.ow2.asm/asm@9.7.1?type=jar",
+      "modified" : false,
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "http://www.ow2.org/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://gitlab.ow2.org/asm/asm/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://mail.ow2.org/wws/arc/asm/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://gitlab.ow2.org/asm/asm/"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.slf4j/slf4j-api@2.0.11?type=jar",
+      "group" : "org.slf4j",
+      "name" : "slf4j-api",
+      "version" : "2.0.11",
+      "description" : "The slf4j API",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "90c46a2d4613049843c804867321e6a7"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "ad96c3f8cf895e696dd35c2bc8e8ebe710be9e6d"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "ce0e71d673acb9036bb55d0244b261cf033f8e4c1245f14f931dfb1937dd4c95"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "a7fff0928a5f27a5bd45f9bfde7d24e4fc64b678d2f972b80162b42d7fddda5eb309aaf5d8780d0d018425b8c01c1859b0c925e26690cd8f0af41212fd035920"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "b8618ec12f84fef03e566a909a149f3ac2b72f7ea4b2bc8b45c6d604b5a7e1f628b781a7e177041467f0919cf3195da7"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "bed3dfc5d1215f8a8143495614912d9beca7642c2ba863985c7e4e515c30a6f78ffbb18fbe4a5886dcff637f6c0fa2fc"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "b4b4f48729e7f5dc4dfb9b813fdee6b9045dec0f4957cc42bce9ed145a02816d"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "4eee9b9e5db7c5f8ec9c554eb7c2160472ed7eb4404c44eafd314c126830af6d53f76b3c6f4a53872f2d23369dd56b0a4cd56fa69e3489c9ed69b993cad30e05"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "MIT",
+            "url" : "https://opensource.org/license/mit/"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.slf4j/slf4j-api@2.0.11?type=jar",
+      "modified" : false
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/net.minidev/json-smart@2.6.0?type=jar",
+      "publisher" : "Chemouni Uriel",
+      "group" : "net.minidev",
+      "name" : "json-smart",
+      "version" : "2.6.0",
+      "description" : "JSON (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for humans to read and write. It is easy for machines to parse and generate. It is based on a subset of the JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999. JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages, including C, C++, C#, Java, JavaScript, Perl, Python, and many others. These properties make JSON an ideal data-interchange language.",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "fde8981f31c3b972355a5adf26a9ec65"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "5f858a43a325a8673da6869ab2bc787a1bcb2244"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "1ae4b561458afb540be8ec5c6dbb4f2e715a319a7ae64854998aaf924770d61b"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "fc8269826394dbca52fa9366f28226e5e37bc64c1268d7a49e2dea7fb2c62da2be8c8bcf362da5561a3cf413816019d8c4f95199a585eb8b13e8a8b634259a00"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "13db694eb1f73778d628452b6840bff4c044101f2dcf7c3782f4bb48798fbae8b752cb8f7536b5173e896de4c225c3a6"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "86c0dc99d98a7c70015b6158f76253cd16a4b2bfb754ea6526991860e2536880b95130044cbe953865b284eebadad781"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "edee009cc2977ff4c2aae9098d14e7e651168dca1735726772d6bda5b66e2e98"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "23f8d5a59cd7111680f65d9fc2ed80b9876ab3094a2048526b376ae16ad855680b1c90264c23c52468efe0646a30db8a22f6b279ec67e047f3951b55a6d0d104"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/net.minidev/json-smart@2.6.0?type=jar",
+      "modified" : false,
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://urielch.github.io/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/netplex/json-smart-v2"
+        }
+      ]
+    }
+  ],
+  "dependencies" : [
+    {
+      "ref" : "pkg:maven/com.jayway.jsonpath/json-path@2.9.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/net.minidev/json-smart@2.6.0?type=jar",
+        "pkg:maven/org.slf4j/slf4j-api@2.0.11?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.mendix/temp@1.0.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.jayway.jsonpath/json-path@2.9.0?type=jar",
+        "pkg:maven/net.minidev/json-smart@2.6.0?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/net.minidev/accessors-smart@2.6.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.ow2.asm/asm@9.7.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/net.minidev/json-smart@2.6.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/net.minidev/accessors-smart@2.6.0?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.ow2.asm/asm@9.7.1?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.slf4j/slf4j-api@2.0.11?type=jar",
+      "dependsOn" : [ ]
+    }
+  ]
+}
