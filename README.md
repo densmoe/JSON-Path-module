@@ -50,11 +50,13 @@ http://jsonpath.com
 JSONPath Java Library Github
 https://github.com/json-path/JsonPath
 
-## Upgrading to a higher version
+## Upgrading from versions < 2.3.0 to versions >= 2.3.0
 
-When upgrading to a higher version, delete any outdated .jar and .JSONPath.RequiredLib in your project's userlib folder linked to older versions of the module. 
+Starting with version 2.3.0 the module has been migrated to Mendix 10 LTS and uses **Mendix Managed Dependencies** instead of Maven for its Java dependencies.
 
-Note: Starting with version 2.0.0 .JSONPath.RequiredLib files will include the version number of the module, for example: `json-smart-2.4.7.jar.JSONPath-2.0.0.RequiredLib`
+Therefore, after upgrading to version 2.3.0 or higher, you should remove any old `.JSONPath-2.X.X.RequiredLib` or `JSONPath.RequiredLib` files from your project as well as the corresponding `.jar` files from your `userlib` folder. Be aware that you may have other modules in your project that also depend on the same or different versions of the same dependencies, so make sure to check for that as well.
+
+You can also remove any `.pom` files related to this module from your `Resources` folder that were used to manage the dependencies via Maven.
 
 ## Developer Notes
 
