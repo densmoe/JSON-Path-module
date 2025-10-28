@@ -10,24 +10,28 @@
 package jsonpath.actions;
 
 import com.mendix.systemwideinterfaces.core.IContext;
-import com.mendix.webui.CustomJavaAction;
 import jsonpath.implementation.Utils;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
 /**
  * GetStringFromJSONByPath
  * * Returns first String value from a JSON input matching JSONPath expression
  * * Returns empty if not found or result is not String
  */
-public class GetStringFromJSONByPath extends CustomJavaAction<java.lang.String>
+public class GetStringFromJSONByPath extends UserAction<java.lang.String>
 {
-	private java.lang.String json;
-	private java.lang.String path;
+	private final java.lang.String json;
+	private final java.lang.String path;
 
-	public GetStringFromJSONByPath(IContext context, java.lang.String json, java.lang.String path)
+	public GetStringFromJSONByPath(
+		IContext context,
+		java.lang.String _json,
+		java.lang.String _path
+	)
 	{
 		super(context);
-		this.json = json;
-		this.path = path;
+		this.json = _json;
+		this.path = _path;
 	}
 
 	@java.lang.Override

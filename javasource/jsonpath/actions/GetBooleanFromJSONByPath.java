@@ -10,9 +10,9 @@
 package jsonpath.actions;
 
 import com.mendix.systemwideinterfaces.core.IContext;
-import com.mendix.webui.CustomJavaAction;
 import jsonpath.proxies.BooleanValue;
 import jsonpath.implementation.Utils;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
 /**
  * GetBooleanFromJSONByPath
@@ -21,16 +21,20 @@ import jsonpath.implementation.Utils;
  * 
  * *Does not actually return a Boolean, but an enumeration with _true & _ false values as Mendix does not support empty booleans
  */
-public class GetBooleanFromJSONByPath extends CustomJavaAction<java.lang.String>
+public class GetBooleanFromJSONByPath extends UserAction<java.lang.String>
 {
-	private java.lang.String json;
-	private java.lang.String path;
+	private final java.lang.String json;
+	private final java.lang.String path;
 
-	public GetBooleanFromJSONByPath(IContext context, java.lang.String json, java.lang.String path)
+	public GetBooleanFromJSONByPath(
+		IContext context,
+		java.lang.String _json,
+		java.lang.String _path
+	)
 	{
 		super(context);
-		this.json = json;
-		this.path = path;
+		this.json = _json;
+		this.path = _path;
 	}
 
 	@java.lang.Override

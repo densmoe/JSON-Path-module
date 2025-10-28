@@ -23,9 +23,12 @@
                 rtlRedirect: "index-rtl.html"
             };
         </script>
-        <script>
-            if (!document.cookie || !document.cookie.match(/(^|;) *originURI=/gi))
-                document.cookie = "originURI=/login.html" + (window.location.protocol === "https:" ? ";SameSite=None;Secure" : "");
+        <script> 
+            if (!document.cookie || !document.cookie.match(/(^|;) *originURI=/gi)) {
+                const url = new URL(window.location.href);
+                const subPath = url.pathname.substring(0, url.pathname.lastIndexOf("/"));
+                document.cookie = `originURI=${subPath}/login.html${window.location.protocol === "https:" ? ";SameSite=None;Secure" : ""}`;
+            }
         </script>
         <script src="mxclientsystem/mxui/mxui.js?{{cachebust}}"></script>
     </body>

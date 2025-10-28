@@ -4,89 +4,200 @@
 
 package myfirstmodule.proxies.microflows;
 
-import java.util.HashMap;
-import java.util.Map;
 import com.mendix.core.Core;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.systemwideinterfaces.core.IMendixObject;
 
-public class Microflows
+public final class Microflows
 {
 	/**
-	 * @deprecated
-	 * The default constructor of the Microflows class should not be used.
-	 * Use the static microflow invocation methods instead.
+	 * Private constructor to prevent instantiation of this class. 
 	 */
-	@java.lang.Deprecated(since = "9.12", forRemoval = true)
-	public Microflows() {}
+	private Microflows() {}
 
 	// These are the microflows for the MyFirstModule module
-	public static void aCT_GetBoolean(IContext context, myfirstmodule.proxies.JSONPathEvaluator _jSONPathEvaluator)
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_GetBooleanBuilder(
+		myfirstmodule.proxies.JSONPathEvaluator _jSONPathEvaluator
+	)
 	{
-		Map<java.lang.String, Object> params = new HashMap<>();
-		params.put("JSONPathEvaluator", _jSONPathEvaluator == null ? null : _jSONPathEvaluator.getMendixObject());
-		Core.microflowCall("MyFirstModule.ACT_GetBoolean").withParams(params).execute(context);
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstModule.ACT_GetBoolean");
+		builder = builder.withParam("JSONPathEvaluator", _jSONPathEvaluator);
+		return builder;
 	}
-	public static void aCT_GetDecimal(IContext context, myfirstmodule.proxies.JSONPathEvaluator _jSONPathEvaluator)
+
+	public static void aCT_GetBoolean(
+		IContext context,
+		myfirstmodule.proxies.JSONPathEvaluator _jSONPathEvaluator
+	)
 	{
-		Map<java.lang.String, Object> params = new HashMap<>();
-		params.put("JSONPathEvaluator", _jSONPathEvaluator == null ? null : _jSONPathEvaluator.getMendixObject());
-		Core.microflowCall("MyFirstModule.ACT_GetDecimal").withParams(params).execute(context);
+		aCT_GetBooleanBuilder(
+				_jSONPathEvaluator
+			)
+			.execute(context);
 	}
-	public static void aCT_GetInteger(IContext context, myfirstmodule.proxies.JSONPathEvaluator _jSONPathEvaluator)
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_GetDecimalBuilder(
+		myfirstmodule.proxies.JSONPathEvaluator _jSONPathEvaluator
+	)
 	{
-		Map<java.lang.String, Object> params = new HashMap<>();
-		params.put("JSONPathEvaluator", _jSONPathEvaluator == null ? null : _jSONPathEvaluator.getMendixObject());
-		Core.microflowCall("MyFirstModule.ACT_GetInteger").withParams(params).execute(context);
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstModule.ACT_GetDecimal");
+		builder = builder.withParam("JSONPathEvaluator", _jSONPathEvaluator);
+		return builder;
 	}
-	public static void aCT_GetJSONArray(IContext context, myfirstmodule.proxies.JSONPathEvaluator _jSONPathEvaluator)
+
+	public static void aCT_GetDecimal(
+		IContext context,
+		myfirstmodule.proxies.JSONPathEvaluator _jSONPathEvaluator
+	)
 	{
-		Map<java.lang.String, Object> params = new HashMap<>();
-		params.put("JSONPathEvaluator", _jSONPathEvaluator == null ? null : _jSONPathEvaluator.getMendixObject());
-		Core.microflowCall("MyFirstModule.ACT_GetJSONArray").withParams(params).execute(context);
+		aCT_GetDecimalBuilder(
+				_jSONPathEvaluator
+			)
+			.execute(context);
 	}
-	public static void aCT_GetJSONObject(IContext context, myfirstmodule.proxies.JSONPathEvaluator _jSONPathEvaluator)
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_GetIntegerBuilder(
+		myfirstmodule.proxies.JSONPathEvaluator _jSONPathEvaluator
+	)
 	{
-		Map<java.lang.String, Object> params = new HashMap<>();
-		params.put("JSONPathEvaluator", _jSONPathEvaluator == null ? null : _jSONPathEvaluator.getMendixObject());
-		Core.microflowCall("MyFirstModule.ACT_GetJSONObject").withParams(params).execute(context);
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstModule.ACT_GetInteger");
+		builder = builder.withParam("JSONPathEvaluator", _jSONPathEvaluator);
+		return builder;
 	}
-	public static void aCT_GetString(IContext context, myfirstmodule.proxies.JSONPathEvaluator _jSONPathEvaluator)
+
+	public static void aCT_GetInteger(
+		IContext context,
+		myfirstmodule.proxies.JSONPathEvaluator _jSONPathEvaluator
+	)
 	{
-		Map<java.lang.String, Object> params = new HashMap<>();
-		params.put("JSONPathEvaluator", _jSONPathEvaluator == null ? null : _jSONPathEvaluator.getMendixObject());
-		Core.microflowCall("MyFirstModule.ACT_GetString").withParams(params).execute(context);
+		aCT_GetIntegerBuilder(
+				_jSONPathEvaluator
+			)
+			.execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_GetJSONArrayBuilder(
+		myfirstmodule.proxies.JSONPathEvaluator _jSONPathEvaluator
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstModule.ACT_GetJSONArray");
+		builder = builder.withParam("JSONPathEvaluator", _jSONPathEvaluator);
+		return builder;
+	}
+
+	public static void aCT_GetJSONArray(
+		IContext context,
+		myfirstmodule.proxies.JSONPathEvaluator _jSONPathEvaluator
+	)
+	{
+		aCT_GetJSONArrayBuilder(
+				_jSONPathEvaluator
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_GetJSONObjectBuilder(
+		myfirstmodule.proxies.JSONPathEvaluator _jSONPathEvaluator
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstModule.ACT_GetJSONObject");
+		builder = builder.withParam("JSONPathEvaluator", _jSONPathEvaluator);
+		return builder;
+	}
+
+	public static void aCT_GetJSONObject(
+		IContext context,
+		myfirstmodule.proxies.JSONPathEvaluator _jSONPathEvaluator
+	)
+	{
+		aCT_GetJSONObjectBuilder(
+				_jSONPathEvaluator
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_GetStringBuilder(
+		myfirstmodule.proxies.JSONPathEvaluator _jSONPathEvaluator
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstModule.ACT_GetString");
+		builder = builder.withParam("JSONPathEvaluator", _jSONPathEvaluator);
+		return builder;
+	}
+
+	public static void aCT_GetString(
+		IContext context,
+		myfirstmodule.proxies.JSONPathEvaluator _jSONPathEvaluator
+	)
+	{
+		aCT_GetStringBuilder(
+				_jSONPathEvaluator
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder dS_JSONPathEvaluatorBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstModule.DS_JSONPathEvaluator");
+		return builder;
+	}
+
 	public static myfirstmodule.proxies.JSONPathEvaluator dS_JSONPathEvaluator(IContext context)
 	{
-		Map<java.lang.String, Object> params = new HashMap<>();
-		IMendixObject result = (IMendixObject)Core.microflowCall("MyFirstModule.DS_JSONPathEvaluator").withParams(params).execute(context);
-		return result == null ? null : myfirstmodule.proxies.JSONPathEvaluator.initialize(context, result);
+		Object result = dS_JSONPathEvaluatorBuilder().execute(context);
+		return result == null ? null : myfirstmodule.proxies.JSONPathEvaluator.initialize(context, (IMendixObject) result);
 	}
-	public static void oN_ChangeJSON(IContext context, myfirstmodule.proxies.JSONPathEvaluator _jSONPathEvaluator)
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder oN_ChangeJSONBuilder(
+		myfirstmodule.proxies.JSONPathEvaluator _jSONPathEvaluator
+	)
 	{
-		Map<java.lang.String, Object> params = new HashMap<>();
-		params.put("JSONPathEvaluator", _jSONPathEvaluator == null ? null : _jSONPathEvaluator.getMendixObject());
-		Core.microflowCall("MyFirstModule.ON_ChangeJSON").withParams(params).execute(context);
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstModule.ON_ChangeJSON");
+		builder = builder.withParam("JSONPathEvaluator", _jSONPathEvaluator);
+		return builder;
 	}
+
+	public static void oN_ChangeJSON(
+		IContext context,
+		myfirstmodule.proxies.JSONPathEvaluator _jSONPathEvaluator
+	)
+	{
+		oN_ChangeJSONBuilder(
+				_jSONPathEvaluator
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder testBooleanBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstModule.TestBoolean");
+		return builder;
+	}
+
 	public static void testBoolean(IContext context)
 	{
-		Map<java.lang.String, Object> params = new HashMap<>();
-		Core.microflowCall("MyFirstModule.TestBoolean").withParams(params).execute(context);
+		testBooleanBuilder().execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder testDecimalBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstModule.TestDecimal");
+		return builder;
+	}
+
 	public static void testDecimal(IContext context)
 	{
-		Map<java.lang.String, Object> params = new HashMap<>();
-		Core.microflowCall("MyFirstModule.TestDecimal").withParams(params).execute(context);
+		testDecimalBuilder().execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder testIntegerBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstModule.TestInteger");
+		return builder;
+	}
+
 	public static void testInteger(IContext context)
 	{
-		Map<java.lang.String, Object> params = new HashMap<>();
-		Core.microflowCall("MyFirstModule.TestInteger").withParams(params).execute(context);
+		testIntegerBuilder().execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder testSurveyAnswersBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstModule.TestSurveyAnswers");
+		return builder;
+	}
+
 	public static void testSurveyAnswers(IContext context)
 	{
-		Map<java.lang.String, Object> params = new HashMap<>();
-		Core.microflowCall("MyFirstModule.TestSurveyAnswers").withParams(params).execute(context);
+		testSurveyAnswersBuilder().execute(context);
 	}
 }

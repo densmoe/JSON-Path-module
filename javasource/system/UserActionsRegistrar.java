@@ -6,7 +6,6 @@ public class UserActionsRegistrar
 {
   public void registerActions(IActionRegistrator registrator)
   {
-    registrator.bundleComponentLoaded();
     registrator.registerUserAction(jsonpath.actions.GetBooleanFromJSONByPath.class);
     registrator.registerUserAction(jsonpath.actions.GetDecimalFromJSONByPath.class);
     registrator.registerUserAction(jsonpath.actions.GetIntegerFromJSONByPath.class);

@@ -10,24 +10,28 @@
 package jsonpath.actions;
 
 import com.mendix.systemwideinterfaces.core.IContext;
-import com.mendix.webui.CustomJavaAction;
 import jsonpath.implementation.Utils;
+import com.mendix.systemwideinterfaces.core.UserAction;
 
 /**
  * GetIntegerFromJSONByPath
  * * Returns first Integer value from a JSON input matching JSONPath expression
  * * Returns empty if not found or result is not Integer/Long
  */
-public class GetIntegerFromJSONByPath extends CustomJavaAction<java.lang.Long>
+public class GetIntegerFromJSONByPath extends UserAction<java.lang.Long>
 {
-	private java.lang.String json;
-	private java.lang.String path;
+	private final java.lang.String json;
+	private final java.lang.String path;
 
-	public GetIntegerFromJSONByPath(IContext context, java.lang.String json, java.lang.String path)
+	public GetIntegerFromJSONByPath(
+		IContext context,
+		java.lang.String _json,
+		java.lang.String _path
+	)
 	{
 		super(context);
-		this.json = json;
-		this.path = path;
+		this.json = _json;
+		this.path = _path;
 	}
 
 	@java.lang.Override

@@ -58,10 +58,5 @@ Note: Starting with version 2.0.0 .JSONPath.RequiredLib files will include the v
 
 ## Developer Notes
 
-Before publishing a new version of the module, increase the version numbers in the Mendix module, `install-dependencies.sh` and `pom.xml` and run `install-dependencies.sh` to update the userlib folder.
-
-## Frequently Asked Questions
-
-Q: What is JSONPath?
-A: It's like XPath for JSON
+Before publishing a new version of the module, increase the version numbers in the Mendix module.
 

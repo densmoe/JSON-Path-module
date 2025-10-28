@@ -1,11 +1,14 @@
 {
-  "presets": ["C:/Program Files/Mendix/9.24.30.51827/modeler/tools/node/node_modules/metro-react-native-babel-preset"],
+  "presets": ["module:/Applications/Studio Pro 10.24.9.81004-Beta.app/Contents/modeler/tools/node/node_modules/@react-native/babel-preset"],
   "plugins": [
     [
-      "C:/Program Files/Mendix/9.24.30.51827/modeler/tools/node/node_modules/babel-plugin-inline-import",
+      "/Applications/Studio Pro 10.24.9.81004-Beta.app/Contents/modeler/tools/node/node_modules/babel-plugin-inline-import",
       {
         "extensions": [".svg"]
       }
+    ],
+    [
+      "module:/Applications/Studio Pro 10.24.9.81004-Beta.app/Contents/modeler/tools/node/node_modules/react-native-reanimated/plugin"
     ]
   ]
 }
